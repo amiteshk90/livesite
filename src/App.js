@@ -7,12 +7,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 export default function App() {
   return (
-    <div style={{ backgroundColor:"#1f89df"}} className="bg-sky-100 h-[200vh]">
+    <div style={{ backgroundColor:"#1f89df"}} className="bg-sky-100 h-[200vh] overflow-hidden">
       <Router>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Business_loan />} />
-          <Route path="/Personal_loan" element={<Personal_loan />} />
+          <Route path="/" element={<Personal_loan />} />
+          <Route path="/Business_loan" element={<Business_loan />} />
           <Route path="/About" element={<About />} />
           <Route path="/Blogs" element={<Blogs />} />
           <Route path="/Navbar" element={<Navbar />} />

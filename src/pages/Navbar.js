@@ -14,17 +14,18 @@ export default function Navbar() {
 
   const navbarData = [
     {
-      title: "Business loan",
-      href: "/",
-      cname:
-        "border-t font-medium w-full flex justify-center p-2.5 mt-3 md:border-none md:p-0 md:mt-0 md:w-auto",
-    },
-    {
       title: "Personal loan",
-      href: "/Personal_loan",
+      href: "/",
       cname:
         "border-t font-medium w-full flex justify-center p-2.5 md:border-none md:p-0 md:w-auto",
     },
+    {
+      title: "Business loan",
+      href: "/Business_loan",
+      cname:
+        "border-t font-medium w-full flex justify-center p-2.5 mt-3 md:border-none md:p-0 md:mt-0 md:w-auto",
+    },
+   
     {
       title: "About",
       href: "/About",
@@ -62,7 +63,7 @@ export default function Navbar() {
 
   return (
     <div class="container">
-      <nav className="fixed top-0 w-full bg-white/10 p-2 backdrop-blur-xl items-center flex px-4 py-2">
+      <nav className="fixed top-0 w-full bg-white/10 p-2 backdrop-blur-xl items-center flex px-4 py-2 z-50">
         <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
           <div
             className="pt-2 md:pt-2.5 lg:pt-2.5 pb-4"
