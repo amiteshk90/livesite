@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 export default function App() {
   return (
-    <div style={{ backgroundColor:"#1f89df"}} className="bg-sky-100 h-[200vh] overflow-hidden">
+    <div className="h-[200vh] relative">
       <Router>
         <Navbar />
         <Routes>

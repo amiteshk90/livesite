@@ -46,3 +46,60 @@
   }
 }
 /* key frame for arrow btn  */
+
+/* scroll css  */
+/* PersonalLoan.css */
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+.animate-start {
+  animation: slideInRight 1s forwards;
+}
+
+.animate-end {
+  animation: slideOutLeft 1s forwards;
+}
+
+
+
+
+.scaled-image {
+    /* Scale down the image to 80% of its original size in normal state */
+    transform: scale(0.5);
+    transform-origin: right bottom;
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+
+.servicediv:hover .scaled-image{
+    /* Scale the image back to its original size on hover */
+    transform: scale(1);
+}
+.servicediv{
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.servicediv:hover{
+  transform: translateY(-30px);
+}
+/* scroll css  */
