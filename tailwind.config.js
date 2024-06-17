@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       colors: {
         "background-card" :"#367BFF",
+        "navbtn" :"#0057FF",
         "background-card-green" :"#01CF9A",
         "custom-black": "#20243A", // Define your custom color here
         "custom-gray": "#575B6D", // Define your custom color here
@@ -18,6 +19,7 @@ module.exports = {
         "btn-gradient":
           "radial-gradient(circle, rgba(28,133,255,1) 47%, rgba(0,56,255,1) 77%);",
         "banner-pattern": "url('assets/first_sec_backgrd.png')",
+        "scroll-bg": "url('assets/card_bck.jpg')",
       },
       transitionProperty: {
         all: "all",

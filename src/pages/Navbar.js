@@ -1,11 +1,16 @@
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import sidebar_logo from "../assets/Logo.png";
+import sidebar_logo from "../assets/white_logo.png";
+import white_logo from "../assets/white_logo.png";
 import sidebar_vector from "../assets/sidebar_vector.png";
 import { FaBars } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { LogoContext } from "./LogoContext";
 
 export default function Navbar() {
+
+  // const { logo } = useContext(LogoContext);
+
   const [toggle, setToggle] = useState(false);
 
   const showNav = () => {
@@ -70,8 +75,9 @@ export default function Navbar() {
             style={{ width: "200px" }}
           >
             <img
+            id="navbar-logo"
               className="hidden md:block lg:block"
-              src={sidebar_logo}
+              src={white_logo}
               //   style={{
               //     backgroundSize: "cover",
               //     backgroundPosition: "center",
@@ -114,10 +120,11 @@ export default function Navbar() {
           </ul>
           <div className="relative hidden sm:block">
             <button
-              style={{ color: "#0057FF" }}
+            id="apply-button"
+              style={{ borderRadius:"100px" }}
               className={`${
                 toggle ? "flex" : "hidden"
-              } text-indigo-800 mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium bg-white px-5 rounded-full p-2 rounded-lg mt-4`}
+              } text-indigo-800 text-navbtn mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium bg-white px-5 p-2 rounded-lg mt-4`}
               onClick={handleToggle}
             >
               Apply For Loan

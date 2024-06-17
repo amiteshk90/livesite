@@ -103,3 +103,123 @@
   transform: translateY(-30px);
 }
 /* scroll css  */
+
+.bottom_whtsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+}
+
+/* Basic styling for sections to fill the viewport */
+.try {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+/* Styling for sticky sections */
+.sticky-section {
+  position: -webkit-sticky; /* For Safari */
+  position: sticky;
+  top: 0px; /* Space from the top of the viewport */
+  transition: top 0.5s ease;
+}
+
+
+
+/* titel style */
+.title {
+  display: table;
+  width: 80%;
+  margin: 0 auto 60px;
+  padding: 0px 80px 30px;
+  position: sticky;
+  top: 150px;
+  text-align: center;
+}
+.title h2{
+  margin-top: -50px;
+}
+
+.title:before, .title:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background: #0057FF;
+}
+.title > p {
+  color: #4e4d4d;
+  float: left;
+  font-family: arimo;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 10px;
+  line-height: 20px;
+  padding-bottom: 100px;
+}
+.title h2:before, .title h2:after {
+  background: none repeat scroll 0 0 #0057FF;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+.title h2:after{
+  background: linear-gradient(45deg, #0057FF, #0057FF);
+}
+.title h2:after {
+  left: auto;
+  right: 0;
+}
+.title:after{
+  background: linear-gradient(45deg, #0057FF, #0057FF);
+}
+.title > p:before, .title > p:after {
+  background: #0057FF;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50.5%;
+  height: 2px;
+  
+}
+.title > p:after{
+  background: linear-gradient(45deg, #0057FF, #0057FF);
+}
+.title > p:after {
+  left: auto;
+  right: 0;
+}
+.title:after {
+  left: auto;
+  right: 0;
+}
+
+.fixedboxarea{
+  position: absolute;
+  top: 8em;
+  left: 0;
+  right: 0;
+}
+
+/* .sticky{
+  position: sticky !important;
+} */
+/* .card2{
+  top: 24em;
+} */
+
