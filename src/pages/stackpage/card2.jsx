@@ -1,10 +1,10 @@
     import img from "../../assets/home.png"
     function Vertical2() {
         return (
-            <section className="scoll-smooth try" style={{height: '100vh'}}>
+            <section className="scoll-smooth try" style={{ height: '100vh' }}>
                 <div className="container ">
 
-                    <div className="flex flex-col items-center m-auto py-12 px-12 bg-scroll-bg rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700" style={{marginTop: "24em", transform: "scale(1.1)"}}>
+                    <div className="flex flex-col items-center m-auto py-12 px-12 bg-scroll-bg rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700" id="card1" style={{transform: "scale(1.1)"}}>
                         <div className="object-cover mr-6 rounded-t-lg">
                             <div className="w-40 h-40 bg-black object-cover flex items-center justify-center rounded-full">
                                 <img className="" src={img} alt="" />

@@ -21,7 +21,6 @@ import { LogoContext } from "./LogoContext";
 import white_logo from "../assets/white_logo.png";
 import logow from "../assets/Logo.png";
 import Stack from "./Stack";
-import Sticky from "react-sticky-el";
 import img from "../assets/home.png";
 
 const Personal_loan = () => {
@@ -175,12 +174,13 @@ const Personal_loan = () => {
             <img
               src={img1}
               alt="First Image"
-              className={`transition-all duration-700 ease-in-out ${imageTransition
-                ? "scale-0 opacity-0"
-                : imageInView
+              className={`transition-all duration-700 ease-in-out ${
+                imageTransition
+                  ? "scale-0 opacity-0"
+                  : imageInView
                   ? "scale-110 opacity-100"
                   : "scale-100 opacity-100"
-                }`}
+              }`}
               style={{
                 width: "90%", // Adjust the width of the image
                 maxWidth: "90%", // Ensure the image does not exceed its container width
@@ -191,20 +191,22 @@ const Personal_loan = () => {
               }}
             />
             <h1
-              className={`absolute bottom-24 right-8 text-white text-4xl md:text-6xl lg:text-7xl font-bold line-height-78 font-bold w-6/12 transition-all duration-700 ease-in-out ${imageTransition
-                ? "translate-x-full opacity-0"
-                : imageInView
+              className={`absolute bottom-24 right-8 text-white text-4xl md:text-6xl lg:text-7xl font-bold line-height-78 font-bold w-6/12 transition-all duration-700 ease-in-out ${
+                imageTransition
+                  ? "translate-x-full opacity-0"
+                  : imageInView
                   ? "translate-x-0 opacity-100"
                   : "translate-x-full opacity-100"
-                }`}
+              }`}
             >
               Get the funds you need, hassle-free.
             </h1>
             <img
               src={img2}
               alt="Second Image"
-              className={`transition-all duration-700 ease-in-out transform ${imageTransition ? "scale-100 opacity-100" : "scale-0 opacity-0"
-                }`}
+              className={`transition-all duration-700 ease-in-out transform ${
+                imageTransition ? "scale-100 opacity-100" : "scale-0 opacity-0"
+              }`}
               style={{
                 width: "100%",
                 height: "auto",
@@ -237,7 +239,7 @@ const Personal_loan = () => {
       </section>
 
       <section className="relative py-4 bg-Body-color">
-        <div className="container mx-auto">
+        <div className="container">
           <div className="grid grid-rows-1">
             <div
               className="flex justify-center gap-8"
@@ -324,7 +326,7 @@ const Personal_loan = () => {
         </div>
       </section>
 
-      <section className="flex flex-col justify-center items-center">
+      <section className="flex flex-col justify-center items-center mb-16">
         <h1 className="mt-12 text-5xl font-bold text-custom-black">
           Why take a loan from LendingKing?
         </h1>
@@ -390,37 +392,68 @@ const Personal_loan = () => {
         <img src={scanner} style={{ width: "200px" }} />
       </div>
 
-      <section className="scoll-smooth py-32 reltive" style={{ height: "100%" }}>
+      <Stack />
+
+      {/* <section className="scoll-smooth py-32" style={{ height: "100vh" }}>
         <div className="container mx-auto">
           <div className="">
             <div class="title">
-              <h2 className="text-6xl text-custom-black font-semibold m-auto">
-                Exceptional Is <br />
-                Our Standard
-              </h2>
-              <p>Get Loan in 3 Simple Steps</p>
-              <div className="flex flex-col items-center m-auto py-12 px-12 bg-scroll-bg rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 fixedboxarea">
-                <div className="object-cover mr-6 rounded-t-lg">
-                  <div className="w-40 h-40 bg-black object-cover flex items-center justify-center rounded-full">
-                    <img className="" src={img} alt="" />
+
+
+            </div>
+            <section className="" style={{ height: "100vh" }}>
+              <div className="container ">
+
+              </div>
+            </section>
+           
+          </div>
+
+        </div>
+      </section> */}
+      <section
+        id="first-section"
+        className="relative bg-banner-pattern bg-contain bg-no-repeat bg-Body-color py-24 px-14"
+      >
+        <div className="container">
+          <div className="flex justify-between items-end">
+            <div className="flex-1">
+              <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold mb-20">
+                Borrow Smart,
+                <br /> Dream Big
+              </h1>
+              <p className="text-black w-8/12">
+                Your Trusted Financial Companion. Access Quick and Secure Loans
+                Tailored to Your Needs, Backed by Transparent Terms and
+                Exceptional Service.
+              </p>
+              <div className="flex items-center mt-4">
+                <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium px-5 rounded-3xl p-2 mt-4">
+                  Apply For Loan
+                </button>
+                <div className="flex pl-4 items-center">
+                  <div
+                    style={{ padding: "10px" }}
+                    className="border-2 border-dotted border-blue-700 rounded-full"
+                  >
+                    <FaPlay style={{ color: "blue" }} />
                   </div>
-                </div>
-                <div className="flex flex-col justify-between p-4 leading-normal">
-                  <h3 className="mb-2 text-5xl font-bold text-black">Step 1</h3>
-                  <hr className="w-4/5 h-1 my-2 bg-black" />
-                  <h5 className="text-2xl font-semibold leading-10">
-                    Check Eligibility
-                  </h5>
-                  <p className="mt-2 font-normal text-sm text-gray-700 dark:text-gray-400">
-                    Are you considering applying for a loan but unsure if you qualify?
-                    We've made it easy for you to find out.
-                  </p>
+                  <h1 className="pl-2 font-semibold text-xl md:text-xl lg:text-xl xl:text-xl">
+                    WATCH DEMO
+                  </h1>
                 </div>
               </div>
             </div>
-            <Stack />
+            <div className="flex-1">
+              <div className="flex items-baseline">
+                <img
+                  src={banner1}
+                  className="z-20 object-fill mb-4 md:mb-0 md:mr-4"
+                  style={{ width: "100%" }}
+                />
+              </div>
+            </div>
           </div>
-
         </div>
       </section>
     </>

@@ -112,7 +112,7 @@
 }
 
 /* Basic styling for sections to fill the viewport */
-.try {
+/* .try {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -121,7 +121,7 @@
   margin: 0;
   padding: 20px;
   box-sizing: border-box;
-}
+} */
 
 
 /* Styling for sticky sections */
@@ -137,7 +137,7 @@
 /* titel style */
 .title {
   display: table;
-  width: 80%;
+  width: 55%;
   margin: 0 auto 60px;
   padding: 0px 80px 30px;
   position: sticky;
@@ -209,17 +209,11 @@
   right: 0;
 }
 
-.fixedboxarea{
-  position: absolute;
-  top: 8em;
-  left: 0;
-  right: 0;
+.firstcard{
+  margin-top: -9em;
+    z-index: 9;
+    position: relative;
 }
-
-/* .sticky{
-  position: sticky !important;
-} */
-/* .card2{
-  top: 24em;
-} */
-
+.sticky {
+    position: sticky !important;
+}
