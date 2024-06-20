@@ -1,4 +1,4 @@
-
+/* 
 .wrapper {
   margin: 0 auto;
 }
@@ -40,15 +40,72 @@
   top: max(16vh, 26em);
 }
 .scroll-cards__item:nth-of-type(2){
-  top: max(16vh, 27em);
-}
-.scroll-cards__item:nth-of-type(3){
   top: max(16vh, 28em);
 }
-.scroll-cards__item:nth-of-type(4){
+.scroll-cards__item:nth-of-type(3){
   top: max(16vh, 30em);
 }
 
+
+.scroll-cards__item:nth-of-type(1) {
+  transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(2) {
+  transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(3) {
+  transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+} */
+
+
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.scroll-cards {
+  counter-reset: card;
+  position: relative;
+  display: block;
+  padding-bottom: 2em;
+}
+
+.scroll-cards > .scroll-cards__item + .scroll-cards__item {
+  margin-top: 40vh;
+}
+
+.scroll-cards__item {
+  --offset: 0.5em;
+  color: #000;
+  position: sticky;
+  top: max(16vh, 15em);
+  padding: 2em 1.5em;
+  min-height: 19em;
+  /* background: #fff; */
+  /* box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1); */
+  width: calc(100% - 5 * var(--offset));
+}
+
+h2 {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 1.5;
+}
+
+/*
+If you use SASS you can shorten this one here like this:
+
+@for $i from 0 through 5 {
+  &:nth-of-type(#{$i}) {
+    transform: translate(calc((#{$i} - 1) * var(--offset)), calc((#{$i} - 1) * var(--offset)));
+  }
+}
+*/
 .scroll-cards__item:nth-of-type(0) {
   transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
 }
@@ -58,8 +115,29 @@
 .scroll-cards__item:nth-of-type(2) {
   transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
 }
-.scroll-cards__itemtitel:nth-of-type(0) {
+.scroll-cards__item:nth-of-type(3) {
   transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
 }
+.scroll-cards__item:nth-of-type(4) {
+  transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
+}
+.scroll-cards__item:nth-of-type(5) {
+  transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
+}
+
+@media screen and (min-width: 37em) {
+  h1 {
+    font-size: 3em;
+  }
+  .scroll-cards__item {
+    --offset: 1em;
+    padding-left: 5em;
+  }
+ 
+}
+
+
+
+
 
 
