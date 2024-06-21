@@ -43,7 +43,7 @@ const Stack = () => {
             <article class="scroll-cards__item" aria-label="Wie - 1">
               <div
                 className="flex flex-col items-center m-auto py-12 px-12 bg-scroll-bg rounded-lg shadow md:flex-row md:max-w-xl hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700"
-                style={{ position: "relative" }}
+                style={{marginTop:"-11em", position: "relative" }}
               >
                 <div className="object-cover mr-6 rounded-t-lg">
                   <div className="w-40 h-40 bg-black object-cover flex items-center justify-center rounded-full">

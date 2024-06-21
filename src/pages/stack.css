@@ -1,66 +1,7 @@
-/* 
-.wrapper {
-  margin: 0 auto;
-}
-
-.scroll-cards {
-  counter-reset: card;
-  position: relative;
-  display: block;
-}
-
-.scroll-cards > .scroll-cards__item + .scroll-cards__item {
-  margin-top: 40vh;
-}
-
-.scroll-cards h1 {
-  position: sticky;
-  top: 2rem;
-  font-size: 2em;
-  margin: 0 0 0.5em;
-}
-.scroll-cards__itemtitel{
-  --offset: 0;
-  color: #000;
-  position: sticky;
-  top: max(16vh, 10em);
-  padding: 2em 1.5em;
-  width: calc(100% - 5 * var(--offset));
-}
-
-.scroll-cards__item {
-  --offset: 0;
-  color: #000;
-  position: sticky;
-  top: max(16vh, 26em);
-  padding: 2em 1.5em;
-  width: calc(100% - 5 * var(--offset));
-}
-.scroll-cards__item:nth-of-type(1){
-  top: max(16vh, 26em);
-}
-.scroll-cards__item:nth-of-type(2){
-  top: max(16vh, 28em);
-}
-.scroll-cards__item:nth-of-type(3){
-  top: max(16vh, 30em);
-}
-
-
-.scroll-cards__item:nth-of-type(1) {
-  transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
-}
-.scroll-cards__item:nth-of-type(2) {
-  transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
-}
-.scroll-cards__item:nth-of-type(3) {
-  transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
-} */
-
-
 
 .wrapper {
   margin: 0 auto;
+  margin-bottom: 2em;
 }
 
 .scroll-cards {
@@ -79,11 +20,10 @@
   color: #000;
   position: sticky;
   top: max(16vh, 15em);
-  padding: 2em 1.5em;
   min-height: 19em;
   /* background: #fff; */
   /* box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1); */
-  width: calc(100% - 5 * var(--offset));
+  width: calc(100% - 0 * var(--offset));
 }
 
 h2 {
@@ -106,34 +46,20 @@ If you use SASS you can shorten this one here like this:
   }
 }
 */
-.scroll-cards__item:nth-of-type(0) {
-  transform: translate(calc((0 - 1) * var(--offset)), calc((0 - 1) * var(--offset)));
-}
 .scroll-cards__item:nth-of-type(1) {
-  transform: translate(calc((1 - 1) * var(--offset)), calc((1 - 1) * var(--offset)));
+  transform: scale(0.8);
+  top: max(16vh, 15em);
 }
 .scroll-cards__item:nth-of-type(2) {
-  transform: translate(calc((2 - 1) * var(--offset)), calc((2 - 1) * var(--offset)));
+  transform: scale(0.9);
+  top: max(16vh, 18em);
+
 }
 .scroll-cards__item:nth-of-type(3) {
-  transform: translate(calc((3 - 1) * var(--offset)), calc((3 - 1) * var(--offset)));
-}
-.scroll-cards__item:nth-of-type(4) {
-  transform: translate(calc((4 - 1) * var(--offset)), calc((4 - 1) * var(--offset)));
-}
-.scroll-cards__item:nth-of-type(5) {
-  transform: translate(calc((5 - 1) * var(--offset)), calc((5 - 1) * var(--offset)));
-}
+  /* transform: scal translate(calc((1 - 1) * var(--offset))); */
+  top: max(16vh, 22em);
+  transform: translate(calc((0 - 0) * var(--offset)), calc((6 - 1) * var(--offset)));
 
-@media screen and (min-width: 37em) {
-  h1 {
-    font-size: 3em;
-  }
-  .scroll-cards__item {
-    --offset: 1em;
-    padding-left: 5em;
-  }
- 
 }
 
 

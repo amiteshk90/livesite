@@ -12,6 +12,8 @@ module.exports = {
         "Body-color": "#F4F9FF", // Define your body color here
         "heading-blue": "#0057FF", // Define your body color here
         "green-bg": "#01C895", // Define your body color here
+        "meet-Our": "#6F7387",
+        "border-color": "#AAADBF",
       },
       backgroundImage: {
         "blue-gradient": "linear-gradient(to right, #0057FF, #357AFF)",

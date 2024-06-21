@@ -111,18 +111,6 @@
   z-index: 99999;
 }
 
-/* Basic styling for sections to fill the viewport */
-/* .try {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: transparent;
-  margin: 0;
-  padding: 20px;
-  box-sizing: border-box;
-} */
-
 
 /* Styling for sticky sections */
 .sticky-section {
@@ -154,9 +142,17 @@
   left: 0;
   bottom: 0;
   width: 2px;
+  z-index: 2; /* Ensure title is above cards initially */
+
   height: 100%;
   background: #0057FF;
 }
+.title p {
+  margin: 0;
+  padding: 20px 0; /* Adjust padding to create space around the paragraph */
+  font-size: 1.25em;
+}
+
 .title > p {
   color: #4e4d4d;
   float: left;

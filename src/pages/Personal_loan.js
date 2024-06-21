@@ -9,6 +9,7 @@ import phone from "../assets/phone.png";
 import scanner from "../assets/scanner.png";
 import back_vector from "../assets/back_vector.png";
 import { FaPlay } from "react-icons/fa";
+import { FaPlus, FaMinus } from "react-icons/fa";
 import sidebar_logo from "../assets/white_logo.png";
 import sidebar_logo1 from "../assets/Logo.png";
 import pig_bank from "../assets/pig_bank.png";
@@ -17,11 +18,13 @@ import trans_sec from "../assets/trans_sec.png";
 import clock_sec from "../assets/clock_sec.png";
 import cola_sec from "../assets/cola_sec.png";
 import head_sec from "../assets/head_sec.png";
+import partner from "../assets/partner.png";
 import { LogoContext } from "./LogoContext";
 import white_logo from "../assets/white_logo.png";
 import logow from "../assets/Logo.png";
 import Stack from "./Stack";
 import img from "../assets/home.png";
+import { IoIosArrowForward } from "react-icons/io";
 
 const Personal_loan = () => {
   const [scrollDisabled, setScrollDisabled] = useState(false);
@@ -115,6 +118,40 @@ const Personal_loan = () => {
     };
   }, []);
 
+  // faq
+  const [openIndex, setOpenIndex] = useState(null);
+
+  const faqData = [
+    {
+      span: "1",
+      question: "What is LendingKing Loan?",
+      answer:
+        "Tata nexarc Business Loans are unsecured / collateral-free, working capital loans at the best rates and turnaround times from a variety of banks and NBFCs - especially aimed to help emerging businesses on Tata nexarc solve their working capital related needs.",
+    },
+    {
+      span: "2",
+      question: "What is an unsecured business loan?",
+      answer:
+        "An unsecured loan is a collateral-free loan. That is, as a borrower (business owner) you do not have to offer any collateral as security to the bank. The loan is offered based on your creditworthiness.",
+    },
+    {
+      span: "3",
+      question: "Why should I take a business loan?",
+      answer:
+        "As a business owner, you may require funds from time to time. Business loans can provide the immediate funds when you need it the most. You can use our collateral-free business loans to start a new business, recover from slowdown, ensure cash flow, get access to working capital, hire new employees, buy new equipment, expand your business or for any other purpose.",
+    },
+    {
+      span: "4",
+      question: "Why take a business loan from LendingKing?",
+      answer:
+        "LendinKing offers attractive unsecured loans from leading banks and financial institutions in India to meet your MSME's financial needs. You don't need to visit multiple banks to find the lowest interest rates, repayment and EMI options. On LendinKing, you can compare the rates of various lenders and find the right option for your emerging business.",
+    },
+  ];
+
+  const handleToggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+  // faq
   return (
     <>
       <section
@@ -174,13 +211,12 @@ const Personal_loan = () => {
             <img
               src={img1}
               alt="First Image"
-              className={`transition-all duration-700 ease-in-out ${
-                imageTransition
-                  ? "scale-0 opacity-0"
-                  : imageInView
+              className={`transition-all duration-700 ease-in-out ${imageTransition
+                ? "scale-0 opacity-0"
+                : imageInView
                   ? "scale-110 opacity-100"
                   : "scale-100 opacity-100"
-              }`}
+                }`}
               style={{
                 width: "90%", // Adjust the width of the image
                 maxWidth: "90%", // Ensure the image does not exceed its container width
@@ -191,22 +227,20 @@ const Personal_loan = () => {
               }}
             />
             <h1
-              className={`absolute bottom-24 right-8 text-white text-4xl md:text-6xl lg:text-7xl font-bold line-height-78 font-bold w-6/12 transition-all duration-700 ease-in-out ${
-                imageTransition
-                  ? "translate-x-full opacity-0"
-                  : imageInView
+              className={`absolute bottom-24 right-8 text-white text-4xl md:text-6xl lg:text-7xl font-bold line-height-78 font-bold w-6/12 transition-all duration-700 ease-in-out ${imageTransition
+                ? "translate-x-full opacity-0"
+                : imageInView
                   ? "translate-x-0 opacity-100"
                   : "translate-x-full opacity-100"
-              }`}
+                }`}
             >
               Get the funds you need, hassle-free.
             </h1>
             <img
               src={img2}
               alt="Second Image"
-              className={`transition-all duration-700 ease-in-out transform ${
-                imageTransition ? "scale-100 opacity-100" : "scale-0 opacity-0"
-              }`}
+              className={`transition-all duration-700 ease-in-out transform ${imageTransition ? "scale-100 opacity-100" : "scale-0 opacity-0"
+                }`}
               style={{
                 width: "100%",
                 height: "auto",
@@ -394,67 +428,89 @@ const Personal_loan = () => {
 
       <Stack />
 
-      {/* <section className="scoll-smooth py-32" style={{ height: "100vh" }}>
-        <div className="container mx-auto">
-          <div className="">
-            <div class="title">
-
+      <section className="relative  bg-Body-color py-24 px-14">
+        <div className="flex justify-center">
+          <div className="px-14 w-3/5">
+            <h1 className="font-medium text-7xl mb-7" style={{ lineHeight: "64.4px" }}>Meet our<br /> Partners</h1>
+            <p className="text-base	font-normal	text-meet-Our mb-7">
+              Business Loans are unsecured / collateral-free, working capital
+              loans at the best rates and turnaround times from a variety of
+              banks and NBFCs - especially aimed to help emerging businesses on
+              LendingKing solve their working capital related needs.
+            </p>
+            <div className="relative    ">
 
             </div>
-            <section className="" style={{ height: "100vh" }}>
-              <div className="container ">
+            {/* effect 2 */}
+            <button className="btn relative cursor-pointer flex justify-between items-center w-fit py-4 px-10 border-2 border-solid border-border-color text-xl overflow-hidden transition-all bg-white rounded-full hover:bg-white group">
 
-              </div>
-            </section>
-           
+              {/* purple box */}
+              <span className="w-0 h-0 rounded-full bg-blue-gradient absolute top-100 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
+              <span className="w-full rounded-full flex justify-between gap-1 items-center text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                Become our Partner <IoIosArrowForward  />
+              </span>
+            </button>
           </div>
 
+          <div className="flex flex-wrap w-full justify-end">
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
+              {" "}
+              <img className="w-full" src={partner} />
+            </div>
+          </div>
         </div>
-      </section> */}
-      <section
-        id="first-section"
-        className="relative bg-banner-pattern bg-contain bg-no-repeat bg-Body-color py-24 px-14"
-      >
-        <div className="container">
-          <div className="flex justify-between items-end">
-            <div className="flex-1">
-              <h1 className="text-white text-4xl md:text-6xl lg:text-7xl font-bold mb-20">
-                Borrow Smart,
-                <br /> Dream Big
-              </h1>
-              <p className="text-black w-8/12">
-                Your Trusted Financial Companion. Access Quick and Secure Loans
-                Tailored to Your Needs, Backed by Transparent Terms and
-                Exceptional Service.
-              </p>
-              <div className="flex items-center mt-4">
-                <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium px-5 rounded-3xl p-2 mt-4">
-                  Apply For Loan
-                </button>
-                <div className="flex pl-4 items-center">
-                  <div
-                    style={{ padding: "10px" }}
-                    className="border-2 border-dotted border-blue-700 rounded-full"
+
+        {/* faq  */}
+        <div className="flex py-24 px-14">
+          <div className="mr-20 w-1/4">
+            <h1 className="font-medium text-7xl mb-7" style={{ lineHeight: "64.4px" }}>FAQ</h1>
+            <p className="text-lg	font-semibold">FREQUENTLY ASKED<br/> QUESTION</p>
+          </div>
+          {/* questions */}
+          <div className="mx-auto p-4 rounded-lg">
+            {faqData.map((faq, index) => (
+              <div key={index} className="border-b border-border-color">
+                <div className="flex justify-between items-center py-5">
+                  <h3 className="flex text-black font-semibold"><span className="text-4xl font-semibold mr-4">{faq.span}</span> <h2 className="text-base mt-1.5">{faq.question}</h2></h3>
+                  <button
+                    onClick={() => handleToggle(index)}
+                    className="focus:outline-none"
                   >
-                    <FaPlay style={{ color: "blue" }} />
-                  </div>
-                  <h1 className="pl-2 font-semibold text-xl md:text-xl lg:text-xl xl:text-xl">
-                    WATCH DEMO
-                  </h1>
+                    {openIndex === index ? <FaMinus /> : <FaPlus />}
+                  </button>
+                </div>
+                <div
+                  className={`overflow-hidden transition-max-height duration-300 ease-in-out ${openIndex === index ? "max-h-96" : "max-h-0"
+                    }`}
+                >
+                  <p className="text-sm py-2 text-custom-black w-3/5">{faq.answer}</p>
                 </div>
               </div>
-            </div>
-            <div className="flex-1">
-              <div className="flex items-baseline">
-                <img
-                  src={banner1}
-                  className="z-20 object-fill mb-4 md:mb-0 md:mr-4"
-                  style={{ width: "100%" }}
-                />
-              </div>
-            </div>
+            ))}
           </div>
+          {/* questions */}
         </div>
+        {/* faq  */}
       </section>
     </>
   );
