@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
 import { useInView } from "react-intersection-observer";
+import { Footer } from "./Footer";
 import banner1 from "../assets/bannerimg.png";
 import img1 from "../assets/section_sec_img1.png";
 import img2 from "../assets/section_sec_img2.png";
@@ -25,6 +26,7 @@ import logow from "../assets/Logo.png";
 import Stack from "./Stack";
 import img from "../assets/home.png";
 import { IoIosArrowForward } from "react-icons/io";
+import { Carousal } from "./Carousal";
 
 const Personal_loan = () => {
   const [scrollDisabled, setScrollDisabled] = useState(false);
@@ -152,6 +154,11 @@ const Personal_loan = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
   // faq
+
+  // hover
+  const [isHoveredFirst, setIsHoveredFirst] = useState(false);
+  const [isHoveredSecond, setIsHoveredSecond] = useState(false);
+  // hover
   return (
     <>
       <section
@@ -200,7 +207,11 @@ const Personal_loan = () => {
         </div>
       </section>
 
-      <section
+      <section className="mobilebanner">
+
+      </section>
+
+      {/* <section
         ref={sectionInViewRef}
         id="second-section"
         className="relative py-24 px-14 flex items-center mt-24"
@@ -252,19 +263,19 @@ const Personal_loan = () => {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section
         ref={sectionInViewRef}
         id="third-section"
-        className="relative flex items-center flex-col bg-blue-gradient-sec text-center h-2/5 py-12"
+        className="relative block md:flex sm:block lg:flex items-center flex-col bg-blue-gradient-sec text-center h-2/5 py-12 px-10"
       >
-        <h1 className="text-white text-5xl font-bold text-wrap">
+        <h1 className="text-white text-2xl sm:text-2xl md:text-5xl lg:text-5xl font-bold text-wrap">
           <span>Get the funds you need,</span> <br />
           <span className="text-heading-blue">hassle-free.</span>
         </h1>
         <h5
-          className="font-normal text-xl mt-4 text-wrap"
+          className="font-normal text-sm md:text-xl md:text-xl mt-4 text-wrap"
           style={{ color: "#D9D9D9" }}
         >
           Your Go-To for Personal & Business Loans. Simple Solutions for Your
@@ -272,16 +283,14 @@ const Personal_loan = () => {
         </h5>
       </section>
 
-      <section className="relative py-4 bg-Body-color">
-        <div className="container">
+      <section className="relative py-4 px-12">
+        <div className="container mx-auto">
           <div className="grid grid-rows-1">
             <div
-              className="flex justify-center gap-8"
-              style={{ marginTop: "-13em" }}
+              className="block md:flex lg:flex justify-center gap-8 thirdsectionpart"
             >
               <div
-                className="flex flex-col relative justify-center items-center text-center bg-background-card hover:bg-heading-blue px-12 py-20 servicediv rounded-lg shadow-lg shadow-blue-500"
-                style={{ width: "30%" }}
+                className="flex flex-col relative justify-center items-center text-center bg-background-card hover:bg-heading-blue px-12 py-20 mb-10 servicediv rounded-lg shadow-lg shadow-blue-500 w-full md:w-4/12 lg:w-4/12"
               >
                 <div className="z-20">
                   <img className="w-16 m-auto" src={home} />
@@ -303,8 +312,7 @@ const Personal_loan = () => {
               </div>
 
               <div
-                className="flex flex-col justify-center items-center text-center bg-background-card-green px-12 py-20 servicediv hover:bg-green-bg rounded-lg shadow-lg shadow-green-300"
-                style={{ width: "30%" }}
+                className="flex flex-col justify-center items-center text-center bg-background-card-green px-12 py-20 mb-10 servicediv hover:bg-green-bg rounded-lg shadow-lg shadow-green-300  w-full md:w-4/12 lg:w-4/12"
               >
                 <div>
                   <img className="w-16 m-auto" src={money} />
@@ -327,22 +335,25 @@ const Personal_loan = () => {
             </div>
           </div>
         </div>
+      </section>
 
-        <div className="flex items-center justify-around mt-16">
-          <div className="flex flex-col justify-start	">
+      <section className="relative py-4 bg-Body-color px-12">
+        <div className="container mx-auto">
+        <div className="block md:flex lg:flex items-center justify-around mt-16 text-center md:text-left lg:text-left">
+          <div className="flex flex-col justify-start	mb-10">
             <div
               className="flex flex-col justify-start	"
-              style={{ borderLeft: "4px solid black" }}
+              // style={{ borderLeft: "4px solid black" }}
             >
-              <p className="text-xs	font-medium text-heading-blue mt-4 ml-4">
+              <p className="text-base	font-medium text-heading-blue mt-4 ml-4">
                 Easy Funds
               </p>
-              <h1 className="text-5xl	font-bold text-custom-black mt-4 ml-4">
+              <h1 className="text-3xl md:text-5xl lg:text-5xl	font-bold text-custom-black mt-4 ml-4">
                 Get Cash Fast
               </h1>
             </div>
             <p
-              className="text-2xl	font-normal mt-4 ml-4"
+              className="font-normal mt-4 ml-4 text-sm md:text-2xl md:text-2xl"
               style={{ color: "#575B6D" }}
             >
               Our streamlined process ensures quick <br /> approval, getting you
@@ -350,72 +361,73 @@ const Personal_loan = () => {
             </p>
 
             <div>
-              <button className="bg-blue-gradient cursor-pointer ml-4 text-white  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4">
+              <button className="bg-blue-gradient cursor-pointer ml-4 text-white  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 w-full md:w-fit">
                 Check your Credit score
               </button>
             </div>
           </div>
 
-          <img src={phone} />
+          <img src={phone} className="mx-auto mb-14"/>
+        </div>
         </div>
       </section>
 
       <section className="flex flex-col justify-center items-center mb-16">
-        <h1 className="mt-12 text-5xl font-bold text-custom-black">
+        <h1 className="mt-12 text-3xl md:text-5xl lg:text-5xl font-bold text-custom-black text-center md:text-left lg:text-left">
           Why take a loan from LendingKing?
         </h1>
-        <div className="flex flex-wrap justify-around mt-14">
+        <div className="flex flex-wrap justify-around mt-0 md:mt-14">
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={pig_bank} />
+            <img src={pig_bank}  className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               Multiple Lenders
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={doc_sec} />
+            <img src={doc_sec}  className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               100% Digital Process
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={trans_sec} />
+            <img src={trans_sec} className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               Transparent Processing
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={clock_sec} />
+            <img src={clock_sec} className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               Superfast Processing
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={cola_sec} />
+            <img src={cola_sec} className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               No Collaterals Required
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
           <div className="flex flex-col justify-center items-center mt-10">
-            <img src={head_sec} />
+            <img src={head_sec} className="mb-5 w-24 md:w-28 lg:w-28"/>
             <h1 className="text-xl font-bold text-custom-black">
               Easy Customer Support
             </h1>
-            <p className="text-xl font-normal text-custom-black">
+            <p className="text-base md:text-xl lg:text-xl font-normal text-custom-black">
               Get started with your loan application
             </p>
           </div>
@@ -429,10 +441,10 @@ const Personal_loan = () => {
       <Stack />
 
       <section className="relative  bg-Body-color py-24 px-14">
-        <div className="flex justify-center">
-          <div className="px-14 w-3/5">
-            <h1 className="font-medium text-7xl mb-7" style={{ lineHeight: "64.4px" }}>Meet our<br /> Partners</h1>
-            <p className="text-base	font-normal	text-meet-Our mb-7">
+        <div className="block md:flex lg:flex justify-center">
+          <div className="px-0 md:px-14 w-full md:w-2/5 mb-10">
+            <h1 className="font-medium text-center md:text-left text-3xl md:text-7xl lg:text-7xl mb-7">Meet Our Partners</h1>
+            <p className="text-base text-center md:text-left	font-normal	text-meet-Our mb-7">
               Business Loans are unsecured / collateral-free, working capital
               loans at the best rates and turnaround times from a variety of
               banks and NBFCs - especially aimed to help emerging businesses on
@@ -442,7 +454,7 @@ const Personal_loan = () => {
 
             </div>
             {/* effect 2 */}
-            <button className="btn relative cursor-pointer flex justify-between items-center w-fit py-4 px-10 border-2 border-solid border-border-color text-xl overflow-hidden transition-all bg-white rounded-full hover:bg-white group">
+            <button className="btn relative cursor-pointer flex justify-center mx-auto md:mx-0 md:justify-between items-center w-fit py-4 px-10 border-2 border-solid border-border-color text-xl overflow-hidden transition-all bg-white rounded-full hover:bg-white group">
 
               {/* purple box */}
               <span className="w-0 h-0 rounded-full bg-blue-gradient absolute top-100 left-0 ease-out duration-500 transition-all group-hover:w-full group-hover:h-full -z-1"></span>
@@ -452,39 +464,41 @@ const Personal_loan = () => {
             </button>
           </div>
 
-          <div className="flex flex-wrap w-full justify-end">
+          <div className="flex flex-wrap gap-4 w-full md:w-3/5 justify-center md:justify-end">
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
               {" "}
-              <img className="w-full" src={partner} />
+              <img className="w-full filter grayscale hover:filter-none" src={partner} />
             </div>
           </div>
         </div>
-
+{/* craousal  */}
+<Carousal/>
+{/* craousal  */}
         {/* faq  */}
-        <div className="flex py-24 px-14">
-          <div className="mr-20 w-1/4">
-            <h1 className="font-medium text-7xl mb-7" style={{ lineHeight: "64.4px" }}>FAQ</h1>
-            <p className="text-lg	font-semibold">FREQUENTLY ASKED<br/> QUESTION</p>
+        <div className="block md:flex py-24 px-0 md:px-14">
+          <div className="mr-20 w-full md:w-1/4">
+            <h1 className="font-medium text-3xl md:text-7xl mb-7" style={{ lineHeight: "64.4px" }}>FAQ</h1>
+            <p className="text-lg	font-semibold">FREQUENTLY ASKED QUESTION</p>
           </div>
           {/* questions */}
           <div className="mx-auto p-4 rounded-lg">
@@ -511,7 +525,74 @@ const Personal_loan = () => {
           {/* questions */}
         </div>
         {/* faq  */}
+
+        {/* hover sections  */}
+        <div className="py-0 md:py-10 lg:py-10 px-0 md:px-14 lg:px-14 block md:flex lg:flex gap-16 justify-around mb-12">
+         
+            {/* First Div */}
+            <div
+              className={`w-full md:w-2/4 lg:w-2/4 rounded-3xl p-10 bg-blue-new-gradient transition-colors duration-300 mb-10 ${
+                isHoveredFirst ? "" : ""
+              }`}
+              onMouseEnter={() => setIsHoveredFirst(true)}
+              onMouseLeave={() => setIsHoveredFirst(false)}
+            >
+              <h2 className="text-2xl md:text-4xl lg:text-4xl  normal-case font-medium mb-6 text-white">
+                Let’s connect and do something exceptional
+              </h2>
+
+              {!isHoveredFirst && (
+                <button className="relative bg-white cursor-pointer flex justify-between items-center w-fit py-2 px-6 text-xl transition-all rounded-full hover:bg-white group text-black mt-16">
+                  Contact Us <IoIosArrowForward />
+                </button>
+              )}
+
+              {isHoveredFirst && (
+                <button className="btn bg-white relative cursor-pointer flex justify-between items-center w-fit py-2 px-6 border-2 border-solid border-border-color text-xl transition-all bg-white rounded-full hover:bg-white group">
+                  <span className="w-0 bg-white h-0 rounded-full bg-blue-gradient absolute top-100 left-0 transition-all ease-out duration-500 group-hover:w-full group-hover:h-full -z-1"></span>
+                  <span className="w-full rounded-full flex justify-between gap-1 items-center text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                    Contact Us <IoIosArrowForward />
+                  </span>
+                </button>
+              )}
+            </div>
+
+            {/* Second Div */}
+            <div
+              className={`w-full md:w-10/12 lg:w-10/12 rounded-3xl p-10 newcard transition-colors duration-300 mb-10 ${
+                isHoveredSecond ? "" : "" 
+              }`}
+              onMouseEnter={() => setIsHoveredSecond(true)}
+              onMouseLeave={() => setIsHoveredSecond(false)}
+            >
+              <h2 className="text-2xl md:text-4xl lg:text-4xl  normal-case font-medium mb-6">
+                Learn more about our us, the people behind the app, and more
+                about the company
+              </h2>
+
+              {!isHoveredSecond && (
+                <button className="relative cursor-pointer flex justify-between items-center w-fit py-2 px-6 text-xl transition-all bg-blue-gradient-sec rounded-full hover:bg-white group text-white mt-16">
+                  About Us <IoIosArrowForward />
+                </button>
+              )}
+
+              {isHoveredSecond && (
+                <button className="btn relative cursor-pointer flex justify-between items-center w-fit py-2 px-6 border-2 border-solid border-border-color text-xl transition-all bg-white rounded-full hover:bg-white group">
+                  <span className="w-0 h-0 rounded-full bg-blue-gradient absolute top-100 left-0 transition-all ease-out duration-500 group-hover:w-full group-hover:h-full -z-1"></span>
+                  <span className="w-full rounded-full flex justify-between gap-1 items-center text-black transition-colors duration-300 ease-in-out group-hover:text-white z-10">
+                    About Us <IoIosArrowForward />
+                  </span>
+                </button>
+              )}
+            </div>
+          
+        </div>
+        {/* hover sections  */}
+
+
       </section>
+      <Footer/>
+      
     </>
   );
 };

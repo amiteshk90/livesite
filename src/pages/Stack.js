@@ -33,11 +33,11 @@ const Stack = () => {
         <div class="scroll-cards">
           <article class="scroll-cards__itemtitel" aria-label="Wie - 0">
             <div class="title" ref={titleRef}>
-              <h2 className="text-6xl text-custom-black font-semibold m-auto">
+              <h2 className="text-2xl md:text-6xl lg:text-6xl text-custom-black font-semibold m-auto">
                 Exceptional Is <br />
                 Our Standard
               </h2>
-              <p>Get Loan in 3 Simple Steps</p>
+              <p className="text-sm">Get Loan in 3 Simple Steps</p>
             </div>
             
             <article class="scroll-cards__item" aria-label="Wie - 1">
