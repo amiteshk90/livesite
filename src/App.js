@@ -8,6 +8,7 @@ import Personal_loan from "./pages/Personal_loan";
 import Navbar from "./pages/Navbar";
 import { LogoProvider } from "./pages/LogoContext";
 import "./App.css";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
@@ -16,7 +17,8 @@ export default function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route path="/" element={<Personal_loan />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/Personal_loan" element={<Personal_loan />} />
             <Route path="/Business_loan" element={<Business_loan />} />
             <Route path="/About" element={<About />} />
             <Route path="/Blogs" element={<Blogs />} />

@@ -249,7 +249,7 @@
 }
 .footer_img {
   left: 0;
-  top: -15em;
+  top: -13em;
 }
 .footer_img img{ 
   margin: 0 auto;
@@ -265,4 +265,25 @@
 }
 .slick-slide {
   padding-left: 5px;
+}
+
+
+/* carusal */
+@media (min-width: 400px) {
+  .frame {
+    min-width: 50%;
+    max-width: 50%;
+  }
+}
+@media (min-width: 768px) {
+  .frame {
+    min-width: 33.3333333333%;
+    max-width: 33.3333333333%;
+  }
+}
+@media (min-width: 1040px) {
+  .frame {
+    min-width: 25%;
+    max-width: 25%;
+  }
 }

@@ -20,7 +20,7 @@ export default function Navbar() {
   const navbarData = [
     {
       title: "Personal loan",
-      href: "/",
+      href: "/Personal",
       cname:
         "border-t font-medium w-full flex justify-center p-2.5 md:border-none md:p-0 md:w-auto",
     },

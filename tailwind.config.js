@@ -27,6 +27,7 @@ module.exports = {
         "btn-gradient":
           "radial-gradient(circle, rgba(28,133,255,1) 47%, rgba(0,56,255,1) 77%);",
         "banner-pattern": "url('assets/first_sec_backgrd.png')",
+        "banner-pattern-mobile": "url('assets/mobile_first_bck.png')",
         "scroll-bg": "url('assets/card_bck.jpg')",
       },
       transitionProperty: {

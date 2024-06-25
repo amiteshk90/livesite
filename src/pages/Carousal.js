@@ -8,10 +8,19 @@ export const Carousal = () => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768, // Mobile screen width, you can adjust this as needed
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
   };
   return (
-    <div className='w-3/4 m-auto'>
+    <div className='m-auto px-0 md:px-14'>
       <div className="mt-20">
       <Slider {...settings}>
         {data.map((d) => (

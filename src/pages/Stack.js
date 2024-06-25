@@ -31,7 +31,7 @@ const Stack = () => {
     <>
       <div class="wrapper mx-auto" >
         <div class="scroll-cards">
-          <article class="scroll-cards__itemtitel" aria-label="Wie - 0">
+          <article class="scroll-cards__itemtitel px-2.5 md:px-0 lg:px-0" aria-label="Wie - 0">
             <div class="title" ref={titleRef}>
               <h2 className="text-2xl md:text-6xl lg:text-6xl text-custom-black font-semibold m-auto">
                 Exceptional Is <br />
