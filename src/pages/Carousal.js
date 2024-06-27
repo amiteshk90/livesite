@@ -1,6 +1,10 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import testimonial1 from "../assets/testimonial1.jpg";
+import testimonial2 from "../assets/testimonial2.jpg";
+import testimonial3 from "../assets/testimonial3.jpg";
+import testimonial4 from "../assets/testimonial4.jpg";
 
 export const Carousal = () => {    
   const settings = {
@@ -25,7 +29,7 @@ export const Carousal = () => {
       <Slider {...settings}>
         {data.map((d) => (
           <div key={d.name} className="bg-white h-[450px] text-black rounded-xl">
-            <div className='h-56 bg-indigo-500 flex justify-center items-center rounded-t-xl'>
+            <div className='h-auto p-2 bg-indigo-500 flex justify-center items-center rounded-t-xl'>
               <img src={d.img} alt="" className="h-44 w-44 rounded-full"/>
             </div>
 
@@ -44,30 +48,24 @@ export const Carousal = () => {
 
 const data = [
   {
-    name: `John Morgan`,
-    img: `/students/John_Morgan.jpg`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    name: `Shvet Sanghvi`,
+    img: testimonial1, // Using imported image
+    review: `I was looking for working capital for my business expansion. I was bit frustrated with the banks as they asked for lots of documents.`
   },
   {
-    name: `Ellie Anderson`,
-    img: `/students/Ellie_Anderson.jpg`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    name: `Shital Thakkar`,
+    img: testimonial2, // Using imported image
+    review: `Lendingkart has been very helpful! They are very professional and the best thing is the timely services. A true saviour of startups I must say.`
   },
   {
-    name: `Nia Adebayo`,
-    img: `/students/Nia_Adebayo.jpg`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    name: `Maduri Dharma Prakash`,
+    img: testimonial3, // Using imported image
+    review: `I am very glad that I was able to find Lendingkart at the right time. The instant support that Lendingkart gives to procure a loan in the most hassle-free way .`
   },
   {
-    name: `Rigo Louie`,
-    img: `/students/Rigo_Louie.jpg`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
+    name: `Girish Ahir`,
+    img: testimonial4, // Using imported image
+    review: `The flexibility that Lendingkart provides in procuring a loan as well as the repayment, is unlike any other company in the market today. I am forever grateful!`
   },
-  {
-    name: `Mia Williams`,
-    img: `/students/Mia_Williams.jpg`,
-    review: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`
-  },
-  
 ];
 

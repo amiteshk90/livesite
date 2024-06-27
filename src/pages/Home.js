@@ -20,6 +20,7 @@ import clock_sec from "../assets/clock_sec.png";
 import cola_sec from "../assets/cola_sec.png";
 import head_sec from "../assets/head_sec.png";
 import partner from "../assets/partner.png";
+import faicent from "../assets/faicent.png";
 import { LogoContext } from "./LogoContext";
 import white_logo from "../assets/white_logo.png";
 import logow from "../assets/Logo.png";
@@ -318,7 +319,7 @@ const Home = () => {
       <section
         ref={sectionInViewRef}
         id="third-section"
-        className="relative block md:flex sm:block lg:flex items-center flex-col bg-blue-gradient-sec text-center h-1/4	md:h-2/5 lg:md:h-2/5 py-12 px-10"
+        className="relative block md:flex sm:block lg:flex items-center flex-col bg-blue-gradient-sec text-center h-2/5 py-12 px-10"
       >
         <h1 className="text-white text-2xl sm:text-2xl md:text-5xl lg:text-5xl font-bold text-wrap">
           <span>Get the funds you need,</span> <br />
@@ -333,11 +334,11 @@ const Home = () => {
         </h5>
       </section>
 
-      <section className="relative py-4 px-12">
+      <section className="relative py-4 px-2">
         <div className="container mx-auto">
           <div className="grid grid-rows-1">
             <div className="block md:flex lg:flex justify-center gap-8 thirdsectionpart">
-              <div className="flex flex-col relative justify-center items-center text-center bg-background-card hover:bg-heading-blue px-12 py-20 mb-10 servicediv rounded-lg shadow-lg shadow-blue-500 w-full md:w-4/12 lg:w-4/12">
+              <div className="flex flex-col relative justify-center items-center text-center bg-background-card hover:bg-heading-blue px-1 md:px-20 lg:px-20 py-4 md:py-20 lg:py-20 mb-10 servicediv rounded-lg shadow-lg shadow-blue-500 w-full md:w-4/12 lg:w-4/12">
                 <div className="z-20">
                   <img className="w-16 m-auto" src={home} />
                   <h1 className="text-white text-4xl font-medium mt-2">
@@ -357,7 +358,7 @@ const Home = () => {
                 </div>
               </div>
 
-              <div className="flex flex-col justify-center items-center text-center bg-background-card-green px-12 py-20 mb-10 servicediv hover:bg-green-bg rounded-lg shadow-lg shadow-green-300  w-full md:w-4/12 lg:w-4/12">
+              <div className="flex flex-col justify-center items-center text-center bg-background-card-green px-1 md:px-20 lg:px-20 py-4 md:py-20 lg:py-20 mb-10 servicediv hover:bg-green-bg rounded-lg shadow-lg shadow-green-300  w-full md:w-4/12 lg:w-4/12">
                 <div>
                   <img className="w-16 m-auto" src={money} />
                   <h1 className="text-white text-4xl font-medium mt-2">
@@ -507,49 +508,23 @@ const Home = () => {
             </button>
           </div>
 
-          <div className="flex flex-wrap gap-4 w-full md:w-3/5 justify-center md:justify-end">
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
+          <div className="flex flex-wrap gap-4 w-full md:w-3/5 justify-center md:justify-between h-fit flex-col md:flex-row lg:flex-row">
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex flex-1 h-40 items-center">
+             
               <img
-                className="w-full filter grayscale hover:filter-none"
+                className="w-full filter grayscale hover:filter-none object-contain object-scale-down h-24"
                 src={partner}
               />
             </div>
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
+            <div className="p-4 bg-white m-2 rounded-3xl inline-flex flex-1 h-40 items-center">
+             
               <img
-                className="w-full filter grayscale hover:filter-none"
-                src={partner}
+                className="w-full filter grayscale hover:filter-none object-contain object-scale-down h-24"
+                src={faicent}
               />
             </div>
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
-              <img
-                className="w-full filter grayscale hover:filter-none"
-                src={partner}
-              />
-            </div>
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
-              <img
-                className="w-full filter grayscale hover:filter-none"
-                src={partner}
-              />
-            </div>
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
-              <img
-                className="w-full filter grayscale hover:filter-none"
-                src={partner}
-              />
-            </div>
-            <div className="p-4 bg-white m-2 rounded-3xl inline-flex">
-              {" "}
-              <img
-                className="w-full filter grayscale hover:filter-none"
-                src={partner}
-              />
-            </div>
+           
+            
           </div>
         </div>
         {/* craousal  */}

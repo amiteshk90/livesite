@@ -230,7 +230,7 @@
 
 @media screen and (max-width: 767.97px) {
   .thirdsectionpart{
-    margin-top: -17em;
+    margin-top: -8em;
   }
   .title h2:before, .title h2:after {
     width: 70px;
@@ -266,7 +266,13 @@
 .slick-slide {
   padding-left: 5px;
 }
-
+.white-dot {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 /* carusal */
 @media (min-width: 400px) {
@@ -287,3 +293,204 @@
     max-width: 25%;
   }
 }
+
+
+.slick-prev:before, .slick-next:before {
+  color: blue !important;
+}
+
+
+/* emi  */
+.calBox {
+  width: 40%;
+}
+.EMIBox {
+  display: flex;
+  justify-content: space-around;
+  background: var(--ebf-4-ff, #ebf4ff);
+  padding: 4rem;
+}
+.resBox {
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0px 4px 10.9px 0px rgba(132, 184, 255, 0.60);
+  width: 25rem;
+  height: 25rem;
+}
+.mothlyStyle {
+  color: var(--575-b-6-d, #575b6d);
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 3rem 0 0 2rem;
+}
+.mothlyStyle .resStyle {
+  color: var(--Blue-2, #367bff);
+  font-family: Poppins;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.Interest {
+  color: var(--575-b-6-d, #575b6d);
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Interest .val {
+  color: var(--neutral, #20243a);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.resbox {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3rem;
+}
+.loanAmt {
+  color: var(--neutral, #20243a);
+  font-family: Poppins;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.loanTxt {
+  color: var(--6-f-7387, #6f7387);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.head {
+  color: var(--575-b-6-d, #575b6d);
+  font-family: Poppins;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.subHead {
+  color: var(--8-e-92-a-5, #8e92a5);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-bottom: 10px;
+}
+.h {
+  color: var(--neutral, #20243a);
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+@media (max-width: 768px) {
+  .EMIBox {
+    margin: 10px;
+    padding: 1rem;
+    flex-direction: column;
+ }
+  .calBox {
+    width: fit-content;
+ }
+  .resBox {
+    width: 100%;
+    margin: 0 auto;
+ }
+  .head {
+    display: none;
+ }
+  .subHead {
+    display: none;
+ }
+  .h {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: center;
+    padding-bottom: 20px;
+    text-align: center;
+    margin-top: 4rem;
+ }
+}
+
+h2 {
+  color: #333;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+input {
+  margin-top: 5px;
+  padding: 8px; 
+  flex: 1; 
+  box-sizing: border-box; 
+  border: 1px solid #ccc; 
+  border-radius: 4px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.result {
+  margin-top: 20px;
+}
+
+h3 {
+  color: #333;
+}
+
+h1 {
+  color: #154379;
+  font-family: 'Poppins';
+  font-weight: bold;
+  font-size: 44px;
+}
+
+@media (max-width: 768px) {
+  .input-group {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  input {
+    flex: none; 
+    width: 100%;
+  }
+}
+
+/* emi  */
