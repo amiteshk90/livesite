@@ -28,6 +28,7 @@ import Stack from "./Stack";
 import img from "../assets/home.png";
 import { IoIosArrowForward } from "react-icons/io";
 import { Carousal } from "./Carousal";
+import Faq from "./Faq";
 
 const Home = () => {
   const [scrollDisabled, setScrollDisabled] = useState(false);
@@ -211,7 +212,7 @@ const Home = () => {
       <section
         id="first-section"
         className="relative bg-banner-pattern-mobile bg-contain bg-no-repeat bg-Body-color py-24 px-0.5 md:px-14 lg:px-14 md:hidden lg:hidden"
-        style={{ backgroundPosition:"left 74% top -12%"}}
+        style={{ backgroundPosition: "left 74% top -12%" }}
       >
         <div className="container">
           <div className="">
@@ -240,9 +241,9 @@ const Home = () => {
                 Exceptional Service.
               </p>
               <div>
-              <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium px-5 rounded-3xl p-2 mt-4">
-                Apply Now
-              </button>
+                <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium px-5 rounded-3xl p-2 mt-4">
+                  Apply Now
+                </button>
               </div>
               <div className="flex pl-4 items-center mt-4">
                 <div
@@ -510,69 +511,24 @@ const Home = () => {
 
           <div className="flex flex-wrap gap-4 w-full md:w-3/5 justify-center md:justify-between h-fit flex-col md:flex-row lg:flex-row">
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex flex-1 h-40 items-center">
-             
               <img
                 className="w-full filter grayscale hover:filter-none object-contain object-scale-down h-24"
                 src={partner}
               />
             </div>
             <div className="p-4 bg-white m-2 rounded-3xl inline-flex flex-1 h-40 items-center">
-             
               <img
                 className="w-full filter grayscale hover:filter-none object-contain object-scale-down h-24"
                 src={faicent}
               />
             </div>
-           
-            
           </div>
         </div>
         {/* craousal  */}
         <Carousal />
         {/* craousal  */}
         {/* faq  */}
-        <div className="block md:flex py-24 px-0 md:px-14">
-          <div className="mr-20 w-full md:w-1/4">
-            <h1
-              className="font-medium text-3xl md:text-7xl mb-7"
-              style={{ lineHeight: "64.4px" }}
-            >
-              FAQ
-            </h1>
-            <p className="text-lg	font-semibold">FREQUENTLY ASKED QUESTION</p>
-          </div>
-          {/* questions */}
-          <div className="mx-auto p-4 rounded-lg">
-            {faqData.map((faq, index) => (
-              <div key={index} className="border-b border-border-color">
-                <div className="flex justify-between items-center py-5">
-                  <h3 className="flex text-black font-semibold">
-                    <span className="text-4xl font-semibold mr-4">
-                      {faq.span}
-                    </span>{" "}
-                    <h2 className="text-base mt-1.5">{faq.question}</h2>
-                  </h3>
-                  <button
-                    onClick={() => handleToggle(index)}
-                    className="focus:outline-none"
-                  >
-                    {openIndex === index ? <FaMinus /> : <FaPlus />}
-                  </button>
-                </div>
-                <div
-                  className={`overflow-hidden transition-max-height duration-300 ease-in-out ${
-                    openIndex === index ? "max-h-96" : "max-h-0"
-                  }`}
-                >
-                  <p className="text-sm py-2 text-custom-black w-3/5">
-                    {faq.answer}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-          {/* questions */}
-        </div>
+        <Faq />
         {/* faq  */}
 
         {/* hover sections  */}

@@ -24,7 +24,7 @@ export const Carousal = () => {
     ]
   };
   return (
-    <div className='m-auto px-0 md:px-14'>
+    <div className='m-auto px-0 md:px-14 pb-12'>
       <div className="mt-20">
       <Slider {...settings}>
         {data.map((d) => (

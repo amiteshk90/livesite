@@ -17,7 +17,8 @@ module.exports = {
         "hover-card": "#84B2FE",
         "footer": "#02193B",
         "Footer-head-color" : "#D6D9E6",
-        "Footer-copy-footer" : "#02193B"
+        "Footer-copy-footer" : "#02193B",
+        "green-color" : "#4caf50",
       },
       backgroundImage: {
         "blue-gradient": "linear-gradient(to right, #0057FF, #357AFF)",
@@ -29,6 +30,7 @@ module.exports = {
         "banner-pattern": "url('assets/first_sec_backgrd.png')",
         "banner-pattern-mobile": "url('assets/mobile_first_bck.png')",
         "scroll-bg": "url('assets/card_bck.jpg')",
+        "connectbg": "url('assets/connectbg.png')"
       },
       transitionProperty: {
         all: "all",
