@@ -7,8 +7,8 @@ import ownership from "../assets/ownership.png";
 import business_proof from "../assets/business_proof.png";
 import connectimg from "../assets/connectimg.png";
 import EMICalculator from "./EMI/EMICalculator";
-import { MdWatchLater } from "react-icons/md";
-import { FaCheckCircle } from "react-icons/fa";
+import { MdApproval, MdWatchLater } from "react-icons/md";
+import { FaCheckCircle, FaCodeBranch, FaMoneyBillWaveAlt } from "react-icons/fa";
 import Faq from "./Faq";
 import { Footer } from "./Footer";
 
@@ -59,19 +59,19 @@ const Business_loan = () => {
 
   return (
     <>
-      <section className="bg-Body-color pt-24 px-14 block md:flex justify-between items-center">
-        <div className="flex-1 px-8 text-center md:text-left">
+     <section className="bg-Body-color pt-24 px-14 block md:flex justify-between items-center">
+        <div className="flex-1 px-0 md:px-8 text-center md:text-left">
           <h1
-            className="text-3xl md:text-5xl lg:text-5xl text-center md:text-left w-full md:w-11/12 lg:w-11/12 font-semibold mb-8"
+            className="text-3xl md:text-5xl lg:text-5xl text-center md:text-left w-full md:w-11/12 lg:w-11/12 font-semibold mb-2 md:mb-8"
           >
             Get Business Loans Approved within 24 Hours*
           </h1>
           <h2
-            className="mb-8 text-xl md:text-3xl lg:text-3xl capitalize font-normal pt-0"
+            className="mb-2 md:mb-8 text-xl md:text-3xl lg:text-3xl capitalize font-normal pt-0"
           >
             Upto <span className="text-navbtn font-semibold">₹ 1,00,000</span>
           </h2>
-          <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium rounded-3xl p-2 mt-4 mb-8 px-12">
+          <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium rounded-3xl p-2 mt-4 mb-2 md:mb-8 px-12">
             Apply Now
           </button>
           <p className="text-base font-normal leading-8">Trusted by</p>
@@ -84,16 +84,19 @@ const Business_loan = () => {
           <img src={business_first} />
         </div>
       </section>
-      <div className="flex justify-around bg-blue-gradient items-center text-white text-sm p-2.5 font-semibold">
-        <p>Minimal Documentation</p>
-        <div class="white-dot"></div>
-        No Collateral Required
-        <div class="white-dot"></div>
-        Easy Disbursal
-        <div class="white-dot"></div>
-        Fully Online Loan Application
+      <div className="bg-blue-gradient">
+      <marquee behavior="scroll" direction="left">
+        <div class="marquee-content">
+            <p>Minimal Documentation</p>
+            <div class="white-dot"></div>
+            <span>No Collateral Required</span>
+            <div class="white-dot"></div>
+            <span>Easy Disbursal</span>
+            <div class="white-dot"></div>
+            <span>Fully Online Loan Application</span>
+        </div>
+    </marquee>
       </div>
-
       <sectoin className="mt-24 px-14 bg-white">
         <EMICalculator />
       </sectoin>
@@ -116,7 +119,8 @@ const Business_loan = () => {
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                    <MdWatchLater size="1.5em" />
+                   
+                    <MdApproval size="1.5em"/>
                   </div>
                   Fast Approval
                 </div>
@@ -128,13 +132,13 @@ const Business_loan = () => {
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                    <MdWatchLater size="1.5em" />
+                    <FaMoneyBillWaveAlt size="1.5em"/>
                   </div>
                   Get Money in 1-3 working days
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                    <MdWatchLater size="1.5em" />
+                    <FaCodeBranch size="1.5em"/>
                   </div>
                   No Branch Visit
                 </div>

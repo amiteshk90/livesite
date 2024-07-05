@@ -30,7 +30,10 @@ module.exports = {
         "banner-pattern": "url('assets/first_sec_backgrd.png')",
         "banner-pattern-mobile": "url('assets/mobile_first_bck.png')",
         "scroll-bg": "url('assets/card_bck.jpg')",
-        "connectbg": "url('assets/connectbg.png')"
+        "connectbg": "url('assets/connectbg.png')",
+        "personal": "url('assets/top_personal.png')",
+        "personal_bottom": "url('assets/personal_backgrd_bottom.png')",
+        "per_icon_bg": "url('assets/per_icon_bg.jpg')",
       },
       transitionProperty: {
         all: "all",

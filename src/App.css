@@ -321,7 +321,7 @@ body{
   background: #fff;
   box-shadow: 0px 4px 10.9px 0px rgba(132, 184, 255, 0.60);
   width: 25rem;
-  height: 25rem;
+  /* height: 25rem; */
 }
 .mothlyStyle {
   color: var(--575-b-6-d, #575b6d);
@@ -359,7 +359,10 @@ body{
 .resbox {
   display: flex;
   justify-content: space-around;
-  padding-top: 3rem;
+  padding: 3rem 15px 0px;
+}
+.Interest{
+  padding-left: 10px;
 }
 .loanAmt {
   color: var(--neutral, #20243a);
@@ -500,3 +503,36 @@ h1 {
 }
 
 /* emi  */
+
+
+.personal_back{
+  background-position: bottom;
+  background-size: auto;
+  background-repeat: no-repeat;
+}
+.one_two_three{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.marquee-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-size: 0.875rem; /* 14px */
+  padding: 0.625rem; /* 10px */
+  font-weight: 600;
+}
+.white-dot {
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 0 1rem; /* Adjust spacing as needed */
+}

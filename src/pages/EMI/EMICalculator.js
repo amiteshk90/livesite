@@ -91,14 +91,14 @@ const EMICalculator = () => {
           </div>
 
           <div className="resbox">
-            <div className="Interest">
+            <div className="Interest mr-1">
               Total Interest Rate
               <div className="val">{interestRate}%</div>
             </div>
 
             <div style={{ border: "0.5px  solid #575B6D" }}></div>
 
-            <div className="Interest">
+            <div className="Interest ml-1">
               Total Amount
               <div className="val">₹{(calculateEMI() * tenure).toFixed(2)}</div>
             </div>
