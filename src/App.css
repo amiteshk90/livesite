@@ -507,7 +507,7 @@ h1 {
 
 .personal_back{
   background-position: bottom;
-  background-size: auto;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .one_two_three{

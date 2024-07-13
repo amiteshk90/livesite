@@ -481,7 +481,7 @@ const Home = () => {
       </section>
 
       <div className="bottom_whtsapp">
-        <img src={scanner} style={{ width: "200px" }} />
+        <img src={scanner} style={{ width: "100px" }} />
       </div>
 
       <Stack />
