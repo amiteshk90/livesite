@@ -1,5 +1,5 @@
 import { useContext, useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import sidebar_logo from "../assets/white_logo.png";
 import white_logo from "../assets/white_logo.png";
 import sidebar_vector from "../assets/sidebar_vector.png";
@@ -10,6 +10,7 @@ import { LogoContext } from "./LogoContext";
 export default function Navbar() {
 
   // const { logo } = useContext(LogoContext);
+  const navigate = useNavigate();
 
   const [toggle, setToggle] = useState(false);
 
@@ -72,7 +73,8 @@ export default function Navbar() {
         <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
           <div
             className="pt-2 md:pt-2.5 lg:pt-2.5 pb-4"
-            style={{ width: "200px" }}
+            style={{ width: "200px" , cursor:"pointer"}}
+            onClick={() =>{navigate("./")}}
           >
             <img
             id="navbar-logo"

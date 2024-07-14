@@ -8,7 +8,11 @@ import business_proof from "../assets/business_proof.png";
 import connectimg from "../assets/connectimg.png";
 import EMICalculator from "./EMI/EMICalculator";
 import { MdApproval, MdWatchLater } from "react-icons/md";
-import { FaCheckCircle, FaCodeBranch, FaMoneyBillWaveAlt } from "react-icons/fa";
+import {
+  FaCheckCircle,
+  FaCodeBranch,
+  FaMoneyBillWaveAlt,
+} from "react-icons/fa";
 import Faq from "./Faq";
 import { Footer } from "./Footer";
 
@@ -59,19 +63,21 @@ const Business_loan = () => {
 
   return (
     <>
-     <section className="bg-Body-color pt-24 px-14 block md:flex justify-between items-center">
+      <section className="bg-Body-color pt-24 px-14 block md:flex justify-between items-center">
         <div className="flex-1 px-0 md:px-8 text-center md:text-left">
-          <h1
-            className="text-3xl md:text-5xl lg:text-5xl text-center md:text-left w-full md:w-11/12 lg:w-11/12 font-semibold mb-2 md:mb-8"
-          >
+          <h1 className="text-3xl md:text-5xl lg:text-5xl text-center md:text-left w-full md:w-11/12 lg:w-11/12 font-semibold mb-2 md:mb-8">
             Get Business Loans Approved within 24 Hours*
           </h1>
-          <h2
-            className="mb-2 md:mb-8 text-xl md:text-3xl lg:text-3xl capitalize font-normal pt-0"
-          >
+          <h2 className="mb-2 md:mb-8 text-xl md:text-3xl lg:text-3xl capitalize font-normal pt-0">
             Upto <span className="text-navbtn font-semibold">₹ 1,00,000</span>
           </h2>
-          <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium rounded-3xl p-2 mt-4 mb-2 md:mb-8 px-12">
+          <button
+            className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium rounded-3xl p-2 mt-4 mb-2 md:mb-8 px-12"
+            onClick={() =>
+              (window.location.href =
+                "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
+            }
+          >
             Apply Now
           </button>
           <p className="text-base font-normal leading-8">Trusted by</p>
@@ -85,8 +91,8 @@ const Business_loan = () => {
         </div>
       </section>
       <div className="bg-blue-gradient">
-      <marquee behavior="scroll" direction="left">
-        <div class="marquee-content">
+        <marquee behavior="scroll" direction="left">
+          <div class="marquee-content">
             <p>Minimal Documentation</p>
             <div class="white-dot"></div>
             <span>No Collateral Required</span>
@@ -94,8 +100,8 @@ const Business_loan = () => {
             <span>Easy Disbursal</span>
             <div class="white-dot"></div>
             <span>Fully Online Loan Application</span>
-        </div>
-    </marquee>
+          </div>
+        </marquee>
       </div>
       <sectoin className="mt-24 px-14 bg-white">
         <EMICalculator />
@@ -119,8 +125,7 @@ const Business_loan = () => {
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                   
-                    <MdApproval size="1.5em"/>
+                    <MdApproval size="1.5em" />
                   </div>
                   Fast Approval
                 </div>
@@ -132,13 +137,13 @@ const Business_loan = () => {
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                    <FaMoneyBillWaveAlt size="1.5em"/>
+                    <FaMoneyBillWaveAlt size="1.5em" />
                   </div>
                   Get Money in 1-3 working days
                 </div>
                 <div className="text-white w-full md:w-2/6 lg:w-2/6  flex justify-start items-center my-6">
                   <div className="rounded text-sm text-navbtn bg-white p-4 mr-6">
-                    <FaCodeBranch size="1.5em"/>
+                    <FaCodeBranch size="1.5em" />
                   </div>
                   No Branch Visit
                 </div>
@@ -163,28 +168,51 @@ const Business_loan = () => {
               <ul>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Age: 23-60 Years
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Age: 23-60 Years
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Only GST registered businesses
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Only GST registered businesses
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Business Type: All constitution
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Business Type: All constitution
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Years in business: 2+
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Years in business: 2+
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Business Type: All constitution
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Business Type: All constitution
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
-                  <FaCheckCircle className="text-green-color" size="1.2em" /> Industry: All eligible
-                  industries
+                  <FaCheckCircle
+                    className="text-green-color"
+                    size="1.2em"
+                  />{" "}
+                  Industry: All eligible industries
                 </li>
               </ul>
             </div>
@@ -195,23 +223,47 @@ const Business_loan = () => {
               <div className="block md:flex lg:flex gap-10 text-center md:text-left">
                 <div className="flex-1">
                   {" "}
-                  <img src={rupeesicon}  style={{height: "80px"}} className="mx-auto"/>
-                  <p className="text-lg text-custom-gray font-medium">12 months’ bank statement</p>{" "}
+                  <img
+                    src={rupeesicon}
+                    style={{ height: "80px" }}
+                    className="mx-auto"
+                  />
+                  <p className="text-lg text-custom-gray font-medium">
+                    12 months’ bank statement
+                  </p>{" "}
                 </div>
                 <div className="flex-1">
                   {" "}
-                  <img src={pan_card} style={{height: "80px"}} className="mx-auto"/>
-                  <p className="text-lg text-custom-gray font-medium">PAN Card Details</p>{" "}
+                  <img
+                    src={pan_card}
+                    style={{ height: "80px" }}
+                    className="mx-auto"
+                  />
+                  <p className="text-lg text-custom-gray font-medium">
+                    PAN Card Details
+                  </p>{" "}
                 </div>
                 <div className="flex-1">
                   {" "}
-                  <img src={business_proof} style={{height: "80px"}} className="mx-auto"/>
-                  <p className="text-lg text-custom-gray font-medium">Business Proof</p>{" "}
+                  <img
+                    src={business_proof}
+                    style={{ height: "80px" }}
+                    className="mx-auto"
+                  />
+                  <p className="text-lg text-custom-gray font-medium">
+                    Business Proof
+                  </p>{" "}
                 </div>
                 <div className="flex-1">
                   {" "}
-                  <img src={ownership} style={{height: "80px"}} className="mx-auto"/>
-                  <p className="text-lg text-custom-gray font-medium">Ownership Proof</p>{" "}
+                  <img
+                    src={ownership}
+                    style={{ height: "80px" }}
+                    className="mx-auto"
+                  />
+                  <p className="text-lg text-custom-gray font-medium">
+                    Ownership Proof
+                  </p>{" "}
                 </div>
               </div>
             </div>
@@ -219,30 +271,42 @@ const Business_loan = () => {
         </div>
       </section>
       <div className="pb-28">
-
-      <Faq />
-      <section className="py-24 px-14">
-        <div className="container">
-          <div className="subscribtionbox bg-navbtn pr-0 md:pr-4 block md:flex bg-connectbg bg-no-repeat bg-auto bg-left-top rounded-lg">
-            <div className="flex items-end gap-2.5 pt-4 md:pt-0">
-              <img src={connectimg} className="h-11"/>
-              <div className="py-0 md:py-4">
-                <h1 className="text-xl md:text-3xl text-white font-medium">Connect with us today!</h1>
-                <p className="text-sm text-white font-light">Share your details and we will get in touch with soon.</p>
+        <Faq />
+        <section className="py-24 px-14">
+          <div className="container">
+            <div className="subscribtionbox bg-navbtn pr-0 md:pr-4 block md:flex bg-connectbg bg-no-repeat bg-auto bg-left-top rounded-lg">
+              <div className="flex items-end gap-2.5 pt-4 md:pt-0">
+                <img src={connectimg} className="h-11" />
+                <div className="py-0 md:py-4">
+                  <h1 className="text-xl md:text-3xl text-white font-medium">
+                    Connect with us today!
+                  </h1>
+                  <p className="text-sm text-white font-light">
+                    Share your details and we will get in touch with soon.
+                  </p>
+                </div>
+              </div>
+              <div className="block md:flex py-4 px-6 flex-1 items-center text-center gap-5">
+                <div
+                  className="block md:flex gap-3 p-2 rounded-lg flex-1 mb-4 md:mb-0"
+                  style={{ background: "#ffffff3b" }}
+                >
+                  <input
+                    type="text"
+                    placeholder="Business Name"
+                    className="mt-0 mb-2 md:mb-0"
+                  />
+                  <input type="email" placeholder="Email Id" className="mt-0" />
+                </div>
+                <submit className="bg-white py-2 px-10 rounded-lg text-navbtn text-xl h-11">
+                  Send
+                </submit>
               </div>
             </div>
-            <div className="block md:flex py-4 px-6 flex-1 items-center text-center gap-5">
-                <div className="block md:flex gap-3 p-2 rounded-lg flex-1 mb-4 md:mb-0" style={{background: "#ffffff3b"}}>
-                  <input type="text" placeholder="Business Name" className="mt-0 mb-2 md:mb-0"/>
-                  <input type="email" placeholder="Email Id" className="mt-0"/>
-                </div>
-                <submit className="bg-white py-2 px-10 rounded-lg text-navbtn text-xl h-11">Send</submit>
-            </div>
           </div>
-        </div>
-      </section>
+        </section>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };
