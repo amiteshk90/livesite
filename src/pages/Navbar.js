@@ -8,7 +8,6 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 import { LogoContext } from "./LogoContext";
 
 export default function Navbar() {
-
   // const { logo } = useContext(LogoContext);
   const navigate = useNavigate();
 
@@ -31,7 +30,7 @@ export default function Navbar() {
       cname:
         "border-t font-medium w-full flex justify-center p-2.5 mt-3 md:border-none md:p-0 md:mt-0 md:w-auto",
     },
-   
+
     // {
     //   title: "About",
     //   href: "/About",
@@ -73,11 +72,13 @@ export default function Navbar() {
         <div className="flex justify-between items-center w-full flex-wrap md:flex-nowrap">
           <div
             className="pt-2 md:pt-2.5 lg:pt-2.5 pb-4"
-            style={{ width: "200px" , cursor:"pointer"}}
-            onClick={() =>{navigate("./")}}
+            style={{ width: "200px", cursor: "pointer" }}
+            onClick={() => {
+              navigate("./");
+            }}
           >
             <img
-            id="navbar-logo"
+              id="navbar-logo"
               className="hidden md:block lg:block"
               src={white_logo}
               //   style={{
@@ -122,8 +123,8 @@ export default function Navbar() {
           </ul>
           <div className="relative hidden sm:block">
             <button
-            id="apply-button"
-              style={{ borderRadius:"100px" }}
+              id="apply-button"
+              style={{ borderRadius: "100px" }}
               className={`${
                 toggle ? "flex" : "hidden"
               } text-indigo-800 text-navbtn mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium bg-white px-5 p-2 rounded-lg mt-4`}
@@ -142,7 +143,11 @@ export default function Navbar() {
                   aria-orientation="vertical"
                   aria-labelledby="options-menu"
                 >
-                  <div className="px-4 py-2 w-full relative hoverbtn flex items-center justify-between">
+                  <div
+                    className="px-4 py-2 w-full relative hoverbtn flex items-center justify-between"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate("./Business_loan")}
+                  >
                     <div className="">
                       <h1 className="text-lg font-bold text-custom-black">
                         Business Loan
@@ -162,7 +167,12 @@ export default function Navbar() {
                     </div>
                     {/* )} */}
                   </div>
-                  <div className="px-4 py-2 w-full relative hoverbtn">
+
+                  <div
+                    className="px-4 py-2 w-full relative hoverbtn"
+                    style={{ cursor: "pointer" }}
+                    onClick={() => navigate("./Personal_loan")}
+                  >
                     <div className="">
                       <h1 className="text-lg font-bold text-custom-black">
                         Personal Loan
