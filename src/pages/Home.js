@@ -349,7 +349,14 @@ const Home = () => {
                     Our business loans makes your growth easier.
                   </p>
 
-                  <button className="bg-white cursor-pointer text-background-card  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4">
+                  <button
+                    className="bg-white cursor-pointer text-background-card  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 hover_non"
+                    style={{ cursor: "pointer",position:"relative",zIndex:"999" }}
+                    onClick={() =>
+                      (window.location.href =
+                        "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
+                    }
+                  >
                     Apply now
                   </button>
                   <img
@@ -369,7 +376,14 @@ const Home = () => {
                     Fuel your dreams with our personalized loans."
                   </p>
 
-                  <button className="bg-white cursor-pointer text-background-card-green  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4">
+                  <button
+                    className="bg-white cursor-pointer text-background-card-green  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 hover_non"
+                    style={{ cursor: "pointer",position:"relative",zIndex:"999" }}
+                    onClick={() =>
+                      (window.location.href =
+                        "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
+                    }
+                  >
                     Apply now
                   </button>
                 </div>
@@ -481,7 +495,7 @@ const Home = () => {
       </section>
 
       <div className="bottom_whtsapp">
-        <img src={scanner} style={{ width: "100px" }} />
+        <img src={scanner} style={{ width: "200px" }} />
       </div>
 
       <Stack />

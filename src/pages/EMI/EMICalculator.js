@@ -103,10 +103,17 @@ const EMICalculator = () => {
               <div className="val">₹{(calculateEMI() * tenure).toFixed(2)}</div>
             </div>
           </div>
-          <div className="px-5 py-5"><button class="bg-blue-gradient cursor-pointer text-white  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 w-full"  onClick={() =>
-                  (window.location.href =
-                    "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
-                }>Apply Now</button></div>
+          <div className="px-5 py-5">
+            <button
+              class="bg-blue-gradient cursor-pointer text-white  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 w-full"
+              onClick={() =>
+                (window.location.href =
+                  "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
+              }
+            >
+              Apply Now
+            </button>
+          </div>
         </div>
       </div>
     </>
