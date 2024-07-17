@@ -182,7 +182,14 @@ const Home = () => {
                 <button className="bg-btn-gradient text-white mx-auto md:mx-0 md:flex md:mt-0 items-center justify-center font-medium px-5 rounded-3xl p-2 mt-4">
                   Apply Now
                 </button>
-                <div className="flex pl-4 items-center">
+                <div
+                  className="flex pl-4 items-center"
+                  style={{ cursor:"pointer"}}
+                  onClick={() => {
+                    window.location.href =
+                      "https://youtu.be/W6mApoYVFB4";
+                  }}
+                >
                   <div
                     style={{ padding: "10px" }}
                     className="border-2 border-dotted border-blue-700 rounded-full"
@@ -351,7 +358,11 @@ const Home = () => {
 
                   <button
                     className="bg-white cursor-pointer text-background-card  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 hover_non"
-                    style={{ cursor: "pointer",position:"relative",zIndex:"999" }}
+                    style={{
+                      cursor: "pointer",
+                      position: "relative",
+                      zIndex: "999",
+                    }}
                     onClick={() =>
                       (window.location.href =
                         "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")
@@ -378,7 +389,11 @@ const Home = () => {
 
                   <button
                     className="bg-white cursor-pointer text-background-card-green  items-center justify-center font-medium px-5 rounded-3xl p-2 mt-6 mb-4 hover_non"
-                    style={{ cursor: "pointer",position:"relative",zIndex:"999" }}
+                    style={{
+                      cursor: "pointer",
+                      position: "relative",
+                      zIndex: "999",
+                    }}
                     onClick={() =>
                       (window.location.href =
                         "https://play.google.com/store/apps/details?id=com.lk.lendingking_app")

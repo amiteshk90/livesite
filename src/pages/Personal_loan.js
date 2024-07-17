@@ -229,39 +229,40 @@ const Personal_loan = () => {
       </section>
       {/* <EMICalculator /> */}
 
-      <section className="py-6  px-8 md:px-14">
+      <section className="py-4  px-8 md:px-14">
         <div className="container">
-          <div className="block md:flex mx-auto border-2 border-inherit border-solid px-4 py-6 md:px-10 md:py-10 rounded-2xl w-full">
+          <div className="block md:flex mx-auto border-2 border-inherit border-solid px-10 py-10 rounded-2xl w-full">
             <div className="w-full md:w-2/5 lg:w-2/5">
               <h1 className="text-center md:text-left text-2xl md:text-4xl font-bold w-full md:w-6/12 mb-6">
                 Who Can Apply ?
               </h1>
               <ul>
-                <li className="flex justify-start items-center gap-4 my-4">
+                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Age: 23-60 Years
+                  Age: 18 - 60 years
                 </li>
-                <li className="flex justify-start items-center gap-4 my-4">
+                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Only GST registered businesses
+                  Income: Minimum Rs 15,000/month for <br/>salaried applicants
+
                 </li>
-                <li className="flex justify-start items-center gap-4 my-4">
+                <li className="flex  items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Business Type: All constitution
+                 Credit Score: Preferably 750 and above as<br/> having higher credit scores increase the <br/>chances of your loan approval at lower interest rates
                 </li>
-                <li className="flex justify-start items-center gap-4 my-4">
+                {/* <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
@@ -269,7 +270,7 @@ const Personal_loan = () => {
                   />{" "}
                   Years in business: 2+
                 </li>
-                <li className="flex justify-start items-center gap-4 my-4">
+                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
@@ -277,14 +278,14 @@ const Personal_loan = () => {
                   />{" "}
                   Business Type: All constitution
                 </li>
-                <li className="flex justify-start items-center gap-4 my-4">
+                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
                   Industry: All eligible industries
-                </li>
+                </li> */}
               </ul>
             </div>
             <div className="w-full md:w-3/5 lg:w-3/5">
@@ -292,7 +293,7 @@ const Personal_loan = () => {
                 What do We Need?
               </h1>
               <div className="block md:flex lg:flex gap-10 text-center md:text-left">
-                <div className="flex-1">
+                <div className="flex-1 flex flex-col items-center">
                   {" "}
                   <img
                     src={rupeesicon}
@@ -303,7 +304,7 @@ const Personal_loan = () => {
                     12 months’ bank statement
                   </p>{" "}
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 flex flex-col items-center">
                   {" "}
                   <img
                     src={pan_card}
@@ -314,7 +315,7 @@ const Personal_loan = () => {
                     PAN Card Details
                   </p>{" "}
                 </div>
-                <div className="flex-1">
+                <div className="flex-1 flex flex-col items-center">
                   {" "}
                   <img
                     src={business_proof}
@@ -322,10 +323,10 @@ const Personal_loan = () => {
                     className="mx-auto"
                   />
                   <p className="text-lg text-custom-gray font-medium">
-                    Business Proof
+                  Salary Proof
                   </p>{" "}
                 </div>
-                <div className="flex-1">
+                {/* <div className="flex-1">
                   {" "}
                   <img
                     src={ownership}
@@ -335,7 +336,7 @@ const Personal_loan = () => {
                   <p className="text-lg text-custom-gray font-medium">
                     Ownership Proof
                   </p>{" "}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
