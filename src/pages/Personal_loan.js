@@ -237,21 +237,21 @@ const Personal_loan = () => {
                 Who Can Apply ?
               </h1>
               <ul>
-                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
+                <li className="flex md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Age: 18 - 60 years
+                  <span className="w-10/12">Age: 18 - 60 years</span>
                 </li>
-                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
+                <li className="flex md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Income: Minimum Rs 15,000/month for <br/>salaried applicants
+                  <span className="w-10/12">Income: Minimum Rs 15,000/month for salaried applicants</span>
 
                 </li>
                 <li className="flex  items-center gap-4 my-4">
@@ -260,9 +260,9 @@ const Personal_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                 Credit Score: Preferably 750 and above as<br/> having higher credit scores increase the <br/>chances of your loan approval at lower interest rates
+                 <span className="w-10/12">Credit Score: Preferably 750 and above as having higher credit scores increase the chances of your loan approval at lower interest rates</span>
                 </li>
-                {/* <li className="flex justify-center md:justify-start items-center gap-4 my-4">
+                {/* <li className="flex md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"

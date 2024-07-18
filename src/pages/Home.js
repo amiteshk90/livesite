@@ -252,7 +252,11 @@ const Home = () => {
                   Apply Now
                 </button>
               </div>
-              <div className="flex pl-4 items-center mt-4">
+              <div className="flex pl-4 items-center mt-4"
+              onClick={() => {
+                window.location.href =
+                  "https://youtu.be/W6mApoYVFB4";
+              }}>
                 <div
                   style={{ padding: "10px" }}
                   className="border-2 border-dotted border-blue-700 rounded-full"

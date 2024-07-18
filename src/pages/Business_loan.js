@@ -158,7 +158,8 @@ const Business_loan = () => {
           </div>
         </div>
       </section>
-      <section className="py-6  px-8 md:px-14">
+
+      <section className="py-12 px-8 md:px-14">
         <div className="container">
           <div className="block md:flex mx-auto border-2 border-inherit border-solid px-10 py-10 rounded-2xl w-full">
             <div className="w-full md:w-2/5 lg:w-2/5">
@@ -172,7 +173,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Age: 18 - 60 years
+                 Age: 23-60 years
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
@@ -180,8 +181,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Income: Minimum Rs 15,000/month for <br/>salaried applicants
-
+                  Only GST registered businesses
                 </li>
                 <li className="flex  items-center gap-4 my-4">
                   {" "}
@@ -189,9 +189,9 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                 Credit Score: Preferably 750 and above as<br/> having higher credit scores increase the <br/>chances of your loan approval at lower interest rates
+                 Business Type: All constitution
                 </li>
-                {/* <li className="flex justify-center md:justify-start items-center gap-4 my-4">
+                <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
                   <FaCheckCircle
                     className="text-green-color"
@@ -214,7 +214,7 @@ const Business_loan = () => {
                     size="1.2em"
                   />{" "}
                   Industry: All eligible industries
-                </li> */}
+                </li>
               </ul>
             </div>
             <div className="w-full md:w-3/5 lg:w-3/5">
@@ -252,7 +252,7 @@ const Business_loan = () => {
                     className="mx-auto"
                   />
                   <p className="text-lg text-custom-gray font-medium">
-                  Salary Proof
+                    Salary Proof
                   </p>{" "}
                 </div>
                 {/* <div className="flex-1">
@@ -271,6 +271,7 @@ const Business_loan = () => {
           </div>
         </div>
       </section>
+
       <div className="pb-28">
         <Faq />
         <section className="py-24 px-14">
