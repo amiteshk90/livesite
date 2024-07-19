@@ -173,7 +173,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                 Age: 23-60 years
+                 <span className="w-10/12">Age: 23-60 years</span>
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
@@ -181,7 +181,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Only GST registered businesses
+                  <span className="w-10/12">Only GST registered businesses</span>
                 </li>
                 <li className="flex  items-center gap-4 my-4">
                   {" "}
@@ -189,7 +189,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                 Business Type: All constitution
+                 <span className="w-10/12">Business Type: All constitution</span>
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
@@ -197,7 +197,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Years in business: 2+
+                  <span className="w-10/12">Years in business: 2+</span>
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
@@ -205,7 +205,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Business Type: All constitution
+                  <span className="w-10/12">Business Type: All constitution</span>
                 </li>
                 <li className="flex justify-center md:justify-start items-center gap-4 my-4">
                   {" "}
@@ -213,7 +213,7 @@ const Business_loan = () => {
                     className="text-green-color"
                     size="1.2em"
                   />{" "}
-                  Industry: All eligible industries
+                  <span className="w-10/12">Industry: All eligible industries</span>
                 </li>
               </ul>
             </div>
