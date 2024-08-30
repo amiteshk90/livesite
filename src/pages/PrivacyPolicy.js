@@ -795,7 +795,7 @@ const PrivacyPolicy = () => {
           if any such controls are exercised.
         </p>
 
-        <h2 cclassName="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
+        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4">
           WithdrawalConsent
         </h2>
         <p className="text-gray-700 mb-4">
