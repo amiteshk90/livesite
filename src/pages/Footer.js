@@ -2,6 +2,7 @@ import React from "react";
 import footer_img from "../assets/footer_img.png";
 import Logo from "../assets/Logo.png";
 import flag from "../assets/flag.png";
+import { Link } from "react-router-dom";
 
 export const Footer = () => {
   return (
@@ -47,9 +48,14 @@ export const Footer = () => {
               <p className="text-base font-normal text-white pb-2">
                 Customer Service
               </p>
-              <p className="text-base font-normal text-white pb-2">
+              {/* <p className="text-base font-normal text-white pb-2">
                 Privacy & Terms
-              </p>
+              </p> */}
+              <Link to="/Privacy">
+                <p className="text-base font-normal text-white pb-2">
+                  Privacy & Terms
+                </p>
+              </Link>
             </div>
           </div>
           <div className="w-full md:w-2/5 mt-10 md:mt-0">
