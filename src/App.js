@@ -9,6 +9,7 @@ import Navbar from "./pages/Navbar";
 import { LogoProvider } from "./pages/LogoContext";
 import "./App.css";
 import Home from "./pages/Home";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   return (
@@ -23,6 +24,7 @@ export default function App() {
             <Route path="/About" element={<About />} />
             <Route path="/Blogs" element={<Blogs />} />
             <Route path="/Navbar" element={<Navbar />} />
+            <Route path="/Privacy" element={<PrivacyPolicy />} />
           </Routes>
         </Router>
       </LogoProvider>
